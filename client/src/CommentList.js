@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const CommentCreate = ({ postId }) => {
+const CommentCreate = ({ comments }) => {
   
-  const [comments, setComments] = useState([])
+  // const [comments, setComments] = useState([])
 
-  const fetchComments = async () => {
-    const res = await axios.get(`http://localhost:4001/posts/${postId}/comments`)
-    console.log(res.data)
-    setComments(res.data);
-  }
+  // const fetchComments = async () => {
+  //   const res = await axios.get(`http://localhost:4001/posts/${postId}/comments`)
+  //   console.log(res.data)
+  //   setComments(res.data);
+  // }
 
-  useEffect(() => {
-    fetchComments();
-  }, [])
+  // useEffect(() => {
+  //   fetchComments();
+  // }, [])
 
   return (
     <div>
